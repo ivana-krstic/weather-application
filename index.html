@@ -1,5 +1,3 @@
-<!-- When opening my file in Chrome it seems fine and works, but here it shows errors and doesn't work-->
-
 <!DOCTYPE html>
 <html lang="eng">
   <head>
@@ -44,6 +42,12 @@
           </div>
         </div>
       </div>
+    
+      <div class="convertButtons">
+        <button class="convertButton" onclick="convertToFar()">F°</button>
+        <button class="convertButton" onclick="convertToCel()">C°</button>
+      </div>
+    
       <div class="row" id="main">
         <div class="col-12">
           <h1>
@@ -60,21 +64,15 @@
               <h3 id="countryName"></h3>
               <h4 id="tempFar"></h4>
               <h4 id="tempCel"></h4>
-            
-                <div class="convertButtons">
-                  <button class="convertButton" onclick="convertToFar()">F°</button>
-                  <button class="convertButton" onclick="convertToCel()">C°</button>
-                </div>
-                
              
-                <div>
-                  <ul class="todaysWeatherInfo">
-                    <li class="list-group-item"  id="weather-description-today"></li>
-                    <li class="list-group-item" class="none">Windspeed: <span id="windspeed"></span></li>
-                    <li class="list-group-item" class="none"> Humidity: <span id="humidity"></span></li>
-                    <!-- There is no information on precipitation in the weather API we use (as confirmed by João) That's why I only included these infos. -->
-                  </ul>
-                </div>
+              <div>
+                <ul class="todaysWeatherInfo">
+                  <li class="list-group-item"  id="weather-description-today"></li>
+                  <li class="list-group-item" class="none">Windspeed: <span id="windspeed"></span></li>
+                  <li class="list-group-item" class="none"> Humidity: <span id="humidity"></span></li>
+                  <!-- There is no information on precipitation in the weather API we use (as confirmed by João) That's why I only included these infos. -->
+                </ul>
+              </div>
 
             </div>
           </div>
